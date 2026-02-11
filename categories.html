@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Categories - Saman Traders</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                            900: '#0c4a6e',
+                        },
+                        accent: {
+                            500: '#f59e0b',
+                            600: '#d97706',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.6s ease-out;
+        }
+    </style>
+</head>
+
+<body class="bg-slate-50 text-slate-800 flex flex-col min-h-screen">
+
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-slate-200" id="navbar">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="flex items-center justify-between h-20">
+                <a href="index.html"
+                    class="text-2xl md:text-3xl font-extrabold text-brand-700 tracking-tight flex items-center gap-2">
+                    <span
+                        class="bg-brand-600 text-white w-10 h-10 flex items-center justify-center rounded-lg shadow-lg">S</span>
+                    Saman Traders
+                </a>
+                <div class="hidden md:flex items-center gap-8 font-medium text-slate-600">
+                    <a href="index.html" class="hover:text-brand-600 transition-colors">Home</a>
+                    <a href="categories.html" class="text-brand-600 font-bold transition-colors">Categories</a>
+                    <a href="about.html" class="hover:text-brand-600 transition-colors">About</a>
+                    <a href="contact.html" class="hover:text-brand-600 transition-colors">Contact</a>
+                    <a href="visit.html"
+                        class="px-6 py-2.5 bg-brand-600 text-white rounded-full hover:bg-brand-700 transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5">Visit
+                        Us</a>
+                </div>
+                <button class="md:hidden text-slate-600" id="mobile-menu-btn">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="md:hidden hidden bg-white border-t border-slate-100 absolute w-full" id="mobile-menu">
+            <div class="flex flex-col p-4 space-y-4 font-medium text-slate-600">
+                <a href="index.html" class="hover:text-brand-600">Home</a>
+                <a href="categories.html" class="text-brand-600 font-bold">Categories</a>
+                <a href="about.html" class="hover:text-brand-600">About</a>
+                <a href="contact.html" class="hover:text-brand-600">Contact</a>
+                <a href="visit.html" class="text-brand-600">Visit Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="flex-grow pt-32 pb-20">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16 reveal active">
+                <h1 class="text-4xl md:text-5xl font-bold text-slate-900 mb-4">Product Categories</h1>
+                <p class="text-slate-600 text-lg">Browse our wide selection of high-quality items.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Category 1 -->
+                <div
+                    class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 reveal delay-100">
+                    <div class="h-64 bg-slate-100 relative">
+                        <img src="../Retail shop/images/3.webp" alt="Toys" class="w-full h-full object-cover">
+                        <div
+                            class="absolute top-4 right-4 bg-accent-500 text-white text-xs font-bold px-3 py-1 rounded-full">
+                            Best Seller</div>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold text-slate-900 mb-3">Toys & Games</h3>
+                        <p class="text-slate-600 mb-6">Explore a world of imagination with our Safe and fun toys for all
+                            ages. From action figures to educational puzzles.</p>
+                        <ul class="space-y-2 mb-6 text-sm text-slate-500">
+                            <li class="flex items-center gap-2"><svg class="w-4 h-4 text-brand-500" fill="currentColor"
+                                    viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd"></path>
+                                </svg> Educational Toys</li>
+                            <li class="flex items-center gap-2"><svg class="w-4 h-4 text-brand-500" fill="currentColor"
+                                    viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd"></path>
+                                </svg> Remote Control Cars</li>
+                            <li class="flex items-center gap-2"><svg class="w-4 h-4 text-brand-500" fill="currentColor"
+                                    viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd"></path>
+                                </svg> Dolls & Accessories</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Category 2 -->
+                <div
+                    class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 reveal delay-200">
+                    <div class="h-64 bg-slate-100 relative">
+                        <img src="../Retail shop/images/4.jpg" alt="Baby" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold text-slate-900 mb-3">Baby Essentials</h3>
+                        <p class="text-slate-600 mb-6">Everything your little one needs. We stock top brands of diapers,
+                            feeding bottles, and gentle skin care.</p>
+                        <ul class="space-y-2 mb-6 text-sm text-slate-500">
+                            <li class="flex items-center gap-2"><svg class="w-4 h-4 text-brand-500" fill="currentColor"
+                                    viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd"></path>
+                                </svg> Diapers & Wipes</li>
+                            <li class="flex items-center gap-2"><svg class="w-4 h-4 text-brand-500" fill="currentColor"
+                                    viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd"></path>
+                                </svg> Baby Clothing</li>
+                            <li class="flex items-center gap-2"><svg class="w-4 h-4 text-brand-500" fill="currentColor"
+                                    viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd"></path>
+                                </svg> Feeding Accessories</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Category 3 -->
+                <div
+                    class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 reveal delay-300">
+                    <div class="h-64 bg-slate-100 relative">
+                        <img src="../Retail shop/images/8.jpg" alt="Retail" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold text-slate-900 mb-3">Retail Items</h3>
+                        <p class="text-slate-600 mb-6">Your daily grocery needs sorted. Biscuits, snacks, water bottles,
+                            and other household necessities.</p>
+                        <ul class="space-y-2 mb-6 text-sm text-slate-500">
+                            <li class="flex items-center gap-2"><svg class="w-4 h-4 text-brand-500" fill="currentColor"
+                                    viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd"></path>
+                                </svg> Snacks & Beverages</li>
+                            <li class="flex items-center gap-2"><svg class="w-4 h-4 text-brand-500" fill="currentColor"
+                                    viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd"></path>
+                                </svg> Stationery</li>
+                            <li class="flex items-center gap-2"><svg class="w-4 h-4 text-brand-500" fill="currentColor"
+                                    viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd"></path>
+                                </svg> Household Goods</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-slate-900 text-slate-300 py-10">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2024 Saman Traders. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Saman Traders</title>
+    <meta name="description" content="Learn about the history and mission of Saman Traders in Kuliyapitiya.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                            900: '#0c4a6e',
+                        },
+                        accent: {
+                            500: '#f59e0b',
+                            600: '#d97706',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.6s ease-out;
+        }
+    </style>
+</head>
+
+<body class="bg-slate-50 text-slate-800 flex flex-col min-h-screen">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-slate-200 transition-all duration-300"
+        id="navbar">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="flex items-center justify-between h-20">
+                <a href="index.html"
+                    class="text-2xl md:text-3xl font-extrabold text-brand-700 tracking-tight flex items-center gap-2">
+                    <span
+                        class="bg-brand-600 text-white w-10 h-10 flex items-center justify-center rounded-lg shadow-lg">S</span>
+                    Saman Traders
+                </a>
+                <div class="hidden md:flex items-center gap-8 font-medium text-slate-600">
+                    <a href="index.html" class="hover:text-brand-600 transition-colors">Home</a>
+                    <a href="categories.html" class="hover:text-brand-600 transition-colors">Categories</a>
+                    <a href="about.html" class="text-brand-600 font-bold transition-colors">About</a>
+                    <a href="contact.html" class="hover:text-brand-600 transition-colors">Contact</a>
+                    <a href="visit.html"
+                        class="px-6 py-2.5 bg-brand-600 text-white rounded-full hover:bg-brand-700 transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5">Visit
+                        Us</a>
+                </div>
+                <button class="md:hidden text-slate-600 focus:outline-none" id="mobile-menu-btn">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="md:hidden hidden bg-white border-t border-slate-100 absolute w-full" id="mobile-menu">
+            <div class="flex flex-col p-4 space-y-4 font-medium text-slate-600">
+                <a href="index.html" class="hover:text-brand-600">Home</a>
+                <a href="categories.html" class="hover:text-brand-600">Categories</a>
+                <a href="about.html" class="text-brand-600">About</a>
+                <a href="contact.html" class="hover:text-brand-600">Contact</a>
+                <a href="visit.html" class="text-brand-600 font-bold">Visit Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="flex-grow pt-32 pb-20">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="flex flex-col md:flex-row items-center gap-16 mb-16">
+                <!-- Text Content -->
+                <div class="md:w-1/2 reveal active">
+                    <h1 class="text-4xl md:text-5xl font-bold text-slate-900 mb-6">Our Story</h1>
+                    <p class="text-lg text-slate-600 leading-relaxed mb-6">
+                        Saman Traders was established in 2010 with a vision to bring high-quality, affordable products
+                        to the families of Kuliyapitiya. What started as a small corner shop has blossomed into a
+                        beloved community staple.
+                    </p>
+                    <p class="text-lg text-slate-600 leading-relaxed mb-6">
+                        We pride ourselves on our selection. From the safest toys for your little ones to the daily
+                        essentials that keep your home running, every item on our shelves is chosen with care.
+                    </p>
+                    <div class="p-6 bg-brand-50 rounded-xl border-l-4 border-brand-500">
+                        <p class="italic text-brand-800 font-medium">"Our customers are our family. We don't just sell
+                            products; we build relationships that last generations."</p>
+                    </div>
+                </div>
+                <!-- Owner Image -->
+                <div class="md:w-1/2 reveal delay-200">
+                    <div class="relative group">
+                        <div
+                            class="absolute -inset-4 bg-gradient-to-r from-accent-500 to-brand-600 rounded-2xl opacity-20 blur-lg group-hover:opacity-40 transition-opacity">
+                        </div>
+                        <img src="../Retail shop/images/1.jpeg" alt="Owner of Saman Traders"
+                            class="relative rounded-2xl shadow-2xl w-full max-w-md mx-auto object-cover transform group-hover:scale-[1.02] transition-transform duration-500">
+                        <div
+                            class="absolute bottom-6 left-1/2 transform -translate-x-1/2 bg-white/90 backdrop-blur px-6 py-2 rounded-full shadow-lg">
+                            <p class="font-bold text-slate-900">Mr. Pasindu Randima</p>
+                            <p class="text-xs text-center text-slate-500 uppercase tracking-wide"> Owner & CEO </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stats/Values -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-20">
+                <div class="text-center p-8 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow reveal">
+                    <div class="text-4xl font-extrabold text-brand-600 mb-2">2010</div>
+                    <p class="text-slate-600">Year Established</p>
+                </div>
+                <div
+                    class="text-center p-8 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow reveal delay-100">
+                    <div class="text-4xl font-extrabold text-brand-600 mb-2">5000+</div>
+                    <p class="text-slate-600">Happy Customers</p>
+                </div>
+                <div
+                    class="text-center p-8 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow reveal delay-200">
+                    <div class="text-4xl font-extrabold text-brand-600 mb-2">100%</div>
+                    <p class="text-slate-600">Quality Guarantee</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-300 py-10">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2024 Saman Traders. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
